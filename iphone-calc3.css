@@ -82,12 +82,19 @@
 	    color-stop(0.44, rgb(101,106,110)),
 	    color-stop(0.73, rgb(152,157,161))
 	);
+
 	background-image: -moz-linear-gradient(
 	    center bottom,
 	    rgb(101,106,110) 44%,
 	    rgb(152,157,161) 73%
 	);
 	border-top: 1px solid #000;
+}
+
+#display {
+	font-family: 'Numans', sans-serif;
+	font-size: 24px;
+	text-align: right;
 }
 
 .row {
@@ -155,4 +162,9 @@ input[type="text"] {
 
 #main .zero {
 	width: 70px;
+}
+
+#main .active {
+	border: 2px solid white;
+	margin: 3px;
 }
