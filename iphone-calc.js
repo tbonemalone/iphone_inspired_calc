@@ -1,11 +1,19 @@
 $(document).ready(function() {
 	console.log("ready");
+<<<<<<< HEAD
 	var num = ""
 	var num0 = ""
 	
 	function getNum(buttonClicked) {
 		// console.log("num = " + num);
 		var i = buttonClicked
+=======
+	var num = 0;	
+	
+	function getNum(num) {
+		console.log("num = " + num);
+		var i = $(this).text()
+>>>>>>> Added functionality to clear button
 		num = num + i;
 		// console.log("num = " + num);
 		return num;
@@ -32,6 +40,7 @@ $(document).ready(function() {
 		}
 	}
 
+<<<<<<< HEAD
 	//arithmetic functions
 	
 	function addNums() {
@@ -98,6 +107,20 @@ $(document).ready(function() {
 		
 		
 		
+=======
+	$(".num").click(function() {
+		console.log("num = " + num);
+		var i = $(this).text()
+		num = num + i;
+		console.log("num = " + num);
+		$("#display").val(num);
+	});
+	
+	$("#all-clear").click(function() {
+		num = ''
+	});
+}); //end doc ready
+>>>>>>> Added functionality to clear button
 
 	})
 	
